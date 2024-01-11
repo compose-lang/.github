@@ -41,6 +41,8 @@ With Compose, there is only 1 consistent `voltage` attrinute.
 
 This makes it possible to infinitely compose classes from existing ones without fearing inconsistencies.
 
+A quick note re wording: when using inheritance, it is common to say that `Phone` _is a_ `Device`. When using composition, developers prefer saying that a `SmartPhone`_has a_ `Phone` and a `Computer`. Compose lets you say that a `SmartPhone`_is a_ `Phone` and a `Computer`. It is both _composed of both_, and _one of each_.   
+
 
 
 
