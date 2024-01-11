@@ -39,7 +39,7 @@ The attribute `brand` is carried _once_ and _once only_ across the inheritance t
 The attribute `voltage` is also _once_ and _once only_ across the inheritance tree. In C++, there would be 2 `voltage` attributes. In Python there would be only 1 but it would be inconsistent (could be an int in Phone, and a string in Computer).
 With Compose, there is only 1 consistent `voltage` attrinute.
 
-This makes it possible to infinitely compose classes from existing ones without fearing inconsistencies.
+This makes it possible to infinitely compose classes from existing ones without fearing inconsistencies. You no longer need to [favor composition over inheritance](https://en.wikipedia.org/wiki/Composition_over_inheritance), you achieve both simultaneously.
 
 A quick note re wording: when using inheritance, it is common to say that `Phone` _is a_ `Device`. When using composition, developers prefer saying that a `SmartPhone`_has a_ `Phone` and _has a_ `Computer`. Compose lets you say that a `SmartPhone`_is a_ `Phone` and _is a_ `Computer`. It is both _composed of both_, and _one of each_.   
 
